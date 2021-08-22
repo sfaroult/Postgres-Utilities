@@ -1,5 +1,7 @@
 create or replace function pgunaccent(str text)
 returns text
+returns null on null input
+immutable
 as $$
 declare
  i           int; 
